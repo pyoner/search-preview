@@ -3,25 +3,24 @@
     <head>
         <meta charset="utf-8">
         <title>Search Preview</title>
+        <style>
+            body {
+                background-color: #fff;
+            }
+        </style>
     </head>
     <body>
         <script>
-          (function() {
+        (function() {
             var cx = '010757224930445905488:hydkhs9fcca';
             var gcse = document.createElement('script');
             gcse.type = 'text/javascript';
             gcse.async = true;
-            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-                '//www.google.com/cse/cse.js?cx=' + cx;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(gcse, s);
-          })();
+        })();
         </script>
-        <div>
-            <gcse:searchbox>
-        </div>
-        <div>
-            <gcse:searchresults>
-        </div>
+        <gcse:search></gcse:search>
     </body>
 </html>
